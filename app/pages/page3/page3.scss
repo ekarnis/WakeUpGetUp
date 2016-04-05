@@ -1,0 +1,83 @@
+.page3 {
+
+	#gradient{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32f2c5+9,b4e391+100 */
+		background: #32f2c5; /* Old browsers */
+		background: -moz-linear-gradient(top, #32f2c5 9%, #b4e391 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #32f2c5 9%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #32f2c5 9%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32f2c5', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+	}
+	/* Styling for the title (Month and Year) of the calendar */
+	div.title {
+		padding: 2vh;   
+	    text-align: center;
+	    font-size:10vw;
+	    height:10vh;
+	    color:white;
+	    }
+
+	/* Styling for the overall table */
+	table {
+	    table-layout: fixed;
+	    width: 100%;
+	    border:none;
+
+	    }
+	/* Styling for the column headers (days of the week) */
+	th {
+		font-size: 8vw;
+	    padding: 0em;
+	    text-align: center;
+	    color:white;
+	    height:7vh;
+	    border:none;
+
+	    }
+	/* Styling for the individual cells (days) */
+	td  {     
+	    font-size: medium;
+	    padding: 0.25em 0.25em;   
+	    width: 5vw; 
+	    height: 10vh;
+	    text-align: center;
+	    border:none;
+
+	    }
+	/* Styling for the date numbers */
+	.date  {     
+	    font-size: 3vh;
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+	    color:white;
+	    }
+
+	.circle-text {
+		font-size: 3vh;
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+	    color:white;
+	    width:50%;
+	}
+	.circle-text:after {
+	    content: "";
+	    display: block;
+	    width: 100%;
+	    height:0;
+	    padding-bottom: 100%;
+	    background: purple;
+	    border-radius: 50%;
+	}
+	.circle-text div {
+	    float:left;
+	    width:100%;
+	    padding-top:50%;
+	    line-height:3.5vh;
+	    margin-top:-1.5vh;
+	    text-align:center;
+	    color:white;
+	}
+
+}

@@ -1,0 +1,150 @@
+
+<ion-navbar *navbar  style="background: #32f2c5;">
+  <div id="title" 
+  style=" color: white;
+   background: #32f2c5;
+  font-family: 'River-Drive';
+  font-size: 13vw;
+  text-align: center;">
+  Pool
+  </div>
+</ion-navbar>
+
+<ion-toolbar [attr.primary]="isAndroid ? '' : null">
+  <ion-segment [(ngModel)]="group" [attr.light]="isAndroid ? '' : null">
+    <ion-segment-button value="Friends">
+      Friends
+    </ion-segment-button>
+    <ion-segment-button value="Family">
+      Family
+    </ion-segment-button>
+    <ion-segment-button value="Work Friends">
+      Work Friends
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content class="page4" id="gradient">
+
+<!--   <div padding>
+  </div>  -->
+
+  <div [ngSwitch]="group">
+    <ion-list *ngSwitchWhen="'Friends'" no-lines>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Yona.jpg">
+        </ion-thumbnail>
+        <h2>Yona</h2>
+        <ion-badge item-right>560xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Amanda.jpg">
+        </ion-thumbnail>
+        <h2>Amanda</h2>
+        <ion-badge item-right>480xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Danielle.jpg">
+        </ion-thumbnail>
+        <h2>Danielle</h2>
+        <ion-badge item-right>320xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Colleen.jpg">
+        </ion-thumbnail>
+        <h2>Colleen</h2>
+        <ion-badge item-right>260xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Eric.jpg">
+        </ion-thumbnail>
+        <h2>Eric</h2>
+        <ion-badge item-right>210xp</ion-badge>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'Family'" no-lines>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Dana.jpg">
+        </ion-thumbnail>
+        <h2>Dana</h2>
+        <ion-badge item-right>660xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Larry.jpg">
+        </ion-thumbnail>
+        <h2>Larry</h2>
+        <ion-badge item-right>450xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Monika.jpg">
+        </ion-thumbnail>
+        <h2>Monika</h2>
+        <ion-badge item-right>310xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Laurie.jpg">
+        </ion-thumbnail>
+        <h2>Laurie</h2>
+        <ion-badge item-right>290xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Eric.jpg">
+        </ion-thumbnail>
+        <h2>Eric</h2>
+        <ion-badge item-right>210xp</ion-badge>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'Work Friends'" no-lines>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Yona.jpg">
+        </ion-thumbnail>
+        <h2>Yona</h2>
+        <ion-badge item-right>560xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Amanda.jpg">
+        </ion-thumbnail>
+        <h2>Amanda</h2>
+        <ion-badge item-right>480xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Danielle.jpg">
+        </ion-thumbnail>
+        <h2>Danielle</h2>
+        <ion-badge item-right>320xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Colleen.jpg">
+        </ion-thumbnail>
+        <h2>Colleen</h2>
+        <ion-badge item-right>260xp</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="Eric.jpg">
+        </ion-thumbnail>
+        <h2>Eric</h2>
+        <ion-badge item-right>210xp</ion-badge>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+</ion-content>

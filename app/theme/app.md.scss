@@ -1,0 +1,69 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Variables
+// --------------------------------------------------
+// Shared Sass variables go in the app.variables.scss file
+@import 'app.variables';
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+// Ionic Material Design Sass
+// --------------------------------------------------
+// Custom App variables must be declared before importing Ionic.
+// Ionic will use its default values when a custom variable isn't provided.
+@import "ionic.md";
+
+
+// App Shared Sass
+// --------------------------------------------------
+// All Sass files that make up this app goes into the app.core.scss file.
+// For simpler CSS overrides, custom app CSS must come after Ionic's CSS.
+@import 'app.core';
+
+
+// App Material Design Only Sass
+// --------------------------------------------------
+// CSS that should only apply to the Material Design app
+.tab-button-text,
+.tab-button-icon {
+	color: white; 
+}
+.toolbar show-navbar, .toolbar-background{
+	background: #32f2c5;
+
+}
+ion-tabs[secondary] tabbar {
+  background-color: #32f2c5; }
+  ion-tabs[secondary] tabbar .tab-button {
+    color: white; }
+  ion-tabs[secondary] tabbar .tab-button:hover:not(.disable-hover),
+  ion-tabs[secondary] tabbar .tab-button[aria-selected=true] {
+    color: white; }
+  ion-tabs[secondary] tabbar tab-highlight {
+    background: white; }
+/*
+ion-tabs[primary] tabbar {
+  background-color: #32f2c5; }
+  ion-tabs[primary] tabbar .tab-button {
+    color: black; }
+  ion-tabs[primary] tabbar .tab-button:hover:not(.disable-hover),
+  ion-tabs[primary] tabbar .tab-button[aria-selected=true] {
+    color: black; }
+  ion-tabs[primary] tabbar tab-highlight {
+    background: black; }
+*/
+#head{
+		text-align: center;
+		font-weight: bold;
+		font-size: 7vw;
+		color: white;
+	}
+	ion-list,ion-item{
+		background: transparent;
+		color: white;
+	}
