@@ -32,6 +32,14 @@
 
   <div [ngSwitch]="group">
     <ion-list *ngSwitchWhen="'Friends'" no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$20</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
           <img src="Yona.jpg">
@@ -70,6 +78,14 @@
     </ion-list>
 
     <ion-list *ngSwitchWhen="'Family'" no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$30</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
           <img src="Dana.jpg">
@@ -108,6 +124,14 @@
     </ion-list>
 
     <ion-list *ngSwitchWhen="'Work Friends'" no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$10</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
           <img src="Yona.jpg">

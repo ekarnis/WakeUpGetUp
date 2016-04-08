@@ -9065,8 +9065,10 @@ body {
   /* IE6-9 */ }
 
 .page5 * {
-  color: white;
-  background: transparent; }
+  color: white; }
+
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .tab-button-text,
 .tab-button-icon {

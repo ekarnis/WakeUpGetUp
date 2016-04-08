@@ -6,10 +6,13 @@ import {Page, Platform} from 'ionic-angular';
 })
 
 export class Page4 {
-  group: string = "Friends";
-  isAndroid: boolean = false;
+	static get parameters(){
+		return [[Platform]];
+	}
+	//group: string = "Friends";
+  	//isAndroid: boolean = false;
 
-  constructor(platform: Platform) {
-    this.isAndroid = platform.is('android');
-  }
+  	constructor(/*platform: Platform*/) {
+    	//this.isAndroid = platform.is('android');
+  	}
 }

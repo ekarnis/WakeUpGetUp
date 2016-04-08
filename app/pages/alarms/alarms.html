@@ -3,12 +3,48 @@
   style=" color: white;
   background: #32f2c5;
   font-family: 'River-Drive';
-  font-size: 13vw;
-  text-align: center;">
+  font-size: 13vw;">
     Alarms
   </div>
 </ion-navbar>
 
-<ion-content class="alarms" id="gradient">
-  
+<ion-content class="alarms" id="gradient" style=" 
+		background: #32f2c5; /* Old browsers */
+		background: -moz-linear-gradient(top, #32f2c5 9%, #b4e391 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #32f2c5 9%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #32f2c5 9%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32f2c5', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+">
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  	<ion-card style="background: #ce93d8; color:white;" *ngFor="#item of items" (click)="viewAlarm({sendItem: item})">
+  		<ion-card-header  style="color:white; font-size: 5vh;">
+  			{{item.time}}
+  		</ion-card-header>
+  		<ion-card-content>
+        <div style="float:left;">
+  		    {{item.type}}
+        </div>
+        <div style="float:right;">
+          {{item.days}}
+        </div>
+  		</ion-card-content>
+	</ion-card>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33></ion-col>
+    <ion-col width-33>
+      <button clear block style="font-size: 8vw;" (click)="newAlarm()">
+        <ion-icon name="add"></ion-icon>
+       </button>
+    </ion-col>
+    <ion-col width-33></ion-col>
+  </ion-row>
+
 </ion-content>

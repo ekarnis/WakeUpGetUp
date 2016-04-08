@@ -2,10 +2,12 @@ import 'es6-shim';
 import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {TabsPage} from './pages/tabs/tabs';
+import {DataService} from './providers/data';
 
 
 @App({
   template: '<ion-nav swipe-back-enabled="true" [root]="rootPage"></ion-nav>',
+  providers: [DataService],
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {

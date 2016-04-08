@@ -1,0 +1,63 @@
+<ion-navbar *navbar  style="background: #32f2c5;">
+  <div id="title" 
+  style=" color: white;
+  background: #32f2c5;
+  font-family: 'River-Drive';
+  font-size: 13vw;
+  text-align: center;">
+   Modify Alarm
+  </div>
+   <ion-buttons start>
+    <button (click)="dismiss()">
+      <span primary showWhen="ios">Cancel</span>
+      <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content class="alarms" id="gradient" style=" 
+		background: #32f2c5; /* Old browsers */
+		background: -moz-linear-gradient(top, #32f2c5 9%, #b4e391 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #32f2c5 9%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #32f2c5 9%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32f2c5', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+">
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 13vw;">{{item.time}}</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">{{item.days}}</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">Dismiss Method</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">Snooze</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33></ion-col>
+    <ion-col width-33>
+      <button clear light block style="font-size: 8vw;" (click)="newAlarm()">
+        <ion-icon name="trash"></ion-icon>
+       </button>
+    </ion-col>
+    <ion-col width-33></ion-col>
+  </ion-row>
+
+</ion-content>
