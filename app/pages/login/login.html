@@ -1,0 +1,51 @@
+<ion-content padding class="login" id="gradient">
+	<div>
+	  <div class="page_title" id="first">
+	    WakeUp,
+	  </div>
+	  <div class="page_title" id="second">
+	    GetUp!
+	  </div>
+  	</div>
+  	<ion-row>
+  	<ion-column width-100>
+  	<ion-card (click)="openApp()" id="login" >
+  		<ion-card-header>
+  			Sign In
+  		</ion-card-header>
+	  	<ion-list>
+
+		  <ion-item no-lines>
+		    <ion-label fixed>Username</ion-label>
+		    <ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item no-lines>
+		    <ion-label fixed>Password</ion-label>
+		    <ion-input type="password"></ion-input>
+		  </ion-item>
+
+		</ion-list>
+		<ion-row>
+			<ion-col width-20></ion-col>
+			<ion-col width-20>
+				<ion-icon id="facebook" name="logo-facebook"></ion-icon>
+			</ion-col>
+			<ion-col width-20></ion-col>
+			<ion-col width-20>
+				<ion-icon id="twitter" name="logo-twitter"></ion-icon>
+			</ion-col>
+			<ion-col width-20></ion-col>
+			
+	 		
+	 	</ion-row>
+	</ion-card>
+  	
+  	<ion-card id="login" padding>
+  		Sign Up With Email
+  	</ion-card>
+  	</ion-column>
+  	</ion-row>
+
+	 
+</ion-content>

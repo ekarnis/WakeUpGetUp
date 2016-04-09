@@ -1,0 +1,40 @@
+.login {
+
+	#first{
+		float:left;
+		font-size: 25vw;
+	}
+	#second{
+		float: right;
+		font-size: 25vw;
+	}
+	#login{
+		opacity: 0.6;
+		font-size: 7vw;
+		color: #ce93d8;
+		text-align: center;
+	}
+	#facebook{
+		float: left;
+		font-size: 15vw;
+		color: #ce93d8;
+	}
+	#twitter{
+		float: right;
+		font-size: 15vw;
+		color: #ce93d8;
+	}
+
+	ion-card-header{
+		font-size: 10vw;
+		color: #ce93d8;
+		text-align: center;
+		opacity: 1;
+	}
+
+	ion-item,ion-label,ion-input{
+		font-size: 5vw;
+		color: #ce93d8;
+		opacity: 1;
+	}
+}

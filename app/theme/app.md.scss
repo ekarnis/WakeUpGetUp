@@ -79,3 +79,9 @@ ion-tabs[primary] tabbar {
     background: linear-gradient(to bottom, #32f2c5 9%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32f2c5', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
   }
+  .page_title{
+      color: white;
+      //background: #32f2c5;
+      font-family: 'River-Drive';
+      font-size: 13vw;
+  }
