@@ -1,0 +1,115 @@
+  <div id="title" 
+  style=" color: white;
+   background: #32f2c5;
+  font-family: 'River-Drive';
+  font-size: 13vw;
+  text-align: center;">
+   Survey
+  </div>
+
+
+<ion-content id="gradient" class="survey" padding>
+	<ion-slides>
+
+  <ion-slide  id="gradient">
+    <h2>How many hours of sleep did you get last night?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>
+
+  <ion-slide  id="gradient">
+    <h2>How many hours of sleep did you get the night before last?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>
+
+  <ion-slide  id="gradient">
+    <h2>How many times did you hit snooze this morning?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>
+
+  <ion-slide  id="gradient">
+    <h2>How many times did you hit snooze yesterday morning?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>
+
+  <ion-slide  id="gradient">
+    <h2>How much time did it take you to get out of bed this morning?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>  
+
+  <ion-slide  id="gradient">
+    <h2>How much time did it take you to get out of bed yesterday morning?</h2>
+    <ion-row>
+    </ion-row>
+    <input type="range" (touchstart)="onDrag($event)" (mousedown)="onDrag($event)">
+  </ion-slide>
+
+  <ion-slide  id="gradient">
+    <h2>Pick the category that is most appealing</h2>
+    <ion-row>
+    </ion-row>
+	    <button block>
+	    	Exercise
+	    </button>
+	    <button block>
+	    	Study/Reading
+	    </button>
+	    <button block>
+	    	Self-Improvement
+	    </button>
+  </ion-slide>  
+
+  <ion-slide  id="gradient">
+    <h3>Here's what we came up with based on what you told us:</h3>
+    <ion-list no-lines>
+	   <ion-item id="head">
+	      <ion-label>Morning Habits</ion-label>
+	    </ion-item>
+	    <ion-item>
+	      <ion-label>Make Bed</ion-label>
+	      <ion-checkbox checked="true"></ion-checkbox>
+	    </ion-item>
+
+	    <ion-item>
+	      <ion-label>Brush Teeth</ion-label>
+	      <ion-checkbox checked="true"></ion-checkbox>
+	    </ion-item>
+
+	    <ion-item>
+	      <ion-label>Eat Breakfast</ion-label>
+	      <ion-checkbox checked="true"></ion-checkbox>
+	    </ion-item>
+	</ion-list>
+
+	<ion-list no-lines>
+	    <ion-item id="head">
+	      <ion-label>Night Habits</ion-label>
+	    </ion-item>
+	    <ion-item>
+	      <ion-label>Brush Teeth</ion-label>
+	      <ion-checkbox></ion-checkbox>
+	    </ion-item>
+
+	    <ion-item>
+	      <ion-label>Floss</ion-label>
+	      <ion-checkbox></ion-checkbox>
+	    </ion-item>
+
+	    <ion-item>
+	      <ion-label>Read</ion-label>
+	      <ion-checkbox></ion-checkbox>
+	    </ion-item>
+	</ion-list>
+  </ion-slide>  
+
+</ion-slides>
+</ion-content>
