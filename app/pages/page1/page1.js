@@ -1,5 +1,6 @@
 import {Page, NavController} from 'ionic-angular';
 import {Alarms} from '../alarms/alarms';
+import {BedTime} from '../bedtime/bedtime';
 
 
 @Page({
@@ -14,5 +15,8 @@ export class Page1 {
 	}
   goToAlarmPage(){
     this.nav.push(Alarms);
+  }
+  goToBedTimePage(){
+    this.nav.push(BedTime);
   }
 }
