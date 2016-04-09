@@ -21,18 +21,21 @@ export class Alarms {
         type: 'PUZZLE',
         days: 'MON TUE WED THU FRI SAT SUN',
         num: '0',
+        checked:'true',
       });
     this.items.push({
         time: '9:00 AM ',
         type: 'PUZZLE',
         days: 'SAT SUN',
         num: '1',
+        checked:'true',
       });
     this.items.push({
         time: '5:00 PM ',
         type: 'NORMAL',
         days: 'MON TUE WED THU FRI',
         num: '2',
+        checked:'false',
       });
   }
 
@@ -47,9 +50,15 @@ export class Alarms {
 	        type: 'PUZZLE',
 	        days: 'MON TUE WED THU FRI SAT SUN',
 	        num: '0',
+	        checked:'true',
 	      });
 
   		let modal = Modal.create(Alarm_Modal, items[0]);
     	this.nav.present(modal);
+  	}
+
+  	check(sendItem){
+  		if(sendItem.checked == 'true') sendItem.checked == 'false';
+  		if(sendItem.checked == 'false') sendItem.checked == 'true';
   	}
 }

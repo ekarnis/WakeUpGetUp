@@ -24,6 +24,7 @@
   	<ion-card style="background: #ce93d8; color:white;" *ngFor="#item of items" (click)="viewAlarm({sendItem: item})">
   		<ion-card-header  style="color:white; font-size: 5vh;">
   			{{item.time}}
+        <ion-toggle light checked={{item.checked}} style="float: right;" (click)="check({sendItem: item})"></ion-toggle>
   		</ion-card-header>
   		<ion-card-content>
         <div style="float:left;">

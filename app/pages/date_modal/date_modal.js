@@ -3,9 +3,9 @@ import {IonicApp, Modal, Platform, NavController, NavParams, Page, ViewControlle
 
 
 @Page({
-  templateUrl: 'build/pages/alarm_modal/alarm_modal.html'
+  templateUrl: 'build/pages/date_modal/date_modal.html'
 })
-export class Alarm_Modal {
+export class Date_Modal {
     static get parameters() {
     return [[NavController], [NavParams], [ViewController]];
   }
@@ -14,9 +14,10 @@ export class Alarm_Modal {
     this.nav = nav;
     this.viewController = viewCtrl;
 
-    var item = navParams.get('sendItem');
+    var items = navParams.get('sendItems');
+    var id = navParams.get('id');
 
-    this.item = item;
+    this.items = items;
 
   }
 
