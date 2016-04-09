@@ -16,8 +16,8 @@ export class MyApp {
   }
 
   constructor(platform) {
-    //this.rootPage = TabsPage;
-    this.rootPage = Login;
+    this.rootPage = TabsPage;
+    //this.rootPage = Login;
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

@@ -19,4 +19,7 @@ export class Page1 {
   goToBedTimePage(){
     this.nav.push(BedTime);
   }
+  onPageLoad(){
+  	GetClock(); setInterval(GetClock,1000);
+  }
 }
