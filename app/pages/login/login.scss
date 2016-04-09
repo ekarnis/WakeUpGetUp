@@ -9,32 +9,33 @@
 		font-size: 25vw;
 	}
 	#login{
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0);
 		font-size: 7vw;
-		color: #ce93d8;
+		color: white;
 		text-align: center;
+		box-shadow: none;
 	}
 	#facebook{
 		float: left;
 		font-size: 15vw;
-		color: #ce93d8;
+		color:  white;
 	}
 	#twitter{
 		float: right;
 		font-size: 15vw;
-		color: #ce93d8;
+		color:  white;
 	}
 
 	ion-card-header{
 		background-color: rgba(255,255,255,0);
 		font-size: 10vw;
-		color: #ce93d8;
+		color:  white;
 		text-align: center;
 	}
 
 	ion-item,ion-label,ion-input{
 		background-color: rgba(255,255,255,0);
 		font-size: 5vw;
-		color: #ce93d8;
+		color:  white;
 	}
 }
