@@ -10,8 +10,8 @@
   </div>
 </ion-navbar>
 
-<ion-toolbar [attr.primary]="isAndroid ? '' : null">
-  <ion-segment [(ngModel)]="group" [attr.light]="isAndroid ? '' : null">
+<ion-toolbar>
+  <ion-segment [(ngModel)]="group">
     <ion-segment-button value="Friends">
       Friends
     </ion-segment-button>
@@ -31,7 +31,7 @@
   </div>  -->
 
   <div [ngSwitch]="group">
-    <ion-list *ngSwitchWhen="'Friends'" no-lines>
+    <ion-list *ngSwitchDefault no-lines>
       <ion-row>
         <ion-col width-33></ion-col>
         <ion-col width-33>

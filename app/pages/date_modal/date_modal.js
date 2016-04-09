@@ -14,11 +14,15 @@ export class Date_Modal {
     this.nav = nav;
     this.viewController = viewCtrl;
 
-    var items = navParams.get('sendItems');
+    var item = navParams.get('sendItem');
     var id = navParams.get('id');
 
-    this.items = items;
+    this.item = item;
 
+  }
+
+  fill_page(){
+    document.getElementById("date").innerHTMl = "April " + id; 
   }
 
   dismiss() {

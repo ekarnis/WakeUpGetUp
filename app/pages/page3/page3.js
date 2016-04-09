@@ -24,8 +24,10 @@ export class Page3 {
   			floss: 'true',
   			read: 'true',
       	});
-      	var sendItems = this.items;
-  		let modal = Modal.create(Date_Modal, sendItems, id);
+      	var sendItem = this.items.pop;
+      	this.items.push(sendItem);
+      	//var sendItems = this.items;
+  		let modal = Modal.create(Date_Modal, sendItem, id);
     	this.nav.present(modal);
  	}
 }
