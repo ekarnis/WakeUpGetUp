@@ -3,9 +3,16 @@
   style=" color: white;
   background: #32f2c5;
   font-family: 'River-Drive';
-  font-size: 13vw;">
-    Alarms
+  font-size: 13vw;
+  text-align: center;">
+   Modify Alarm
   </div>
+   <ion-buttons start>
+    <button (click)="dismiss()">
+      <span primary showWhen="ios">Cancel</span>
+      <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-navbar>
 
 <ion-content class="alarms" id="gradient" style=" 
@@ -21,28 +28,33 @@
   <ion-row>
       <ion-col width-90></ion-col>
   </ion-row>
-  	<ion-card style="background: #ce93d8; color:white;" *ngFor="#item of items" (click)="viewAlarm({sendItem: item})">
-  		<ion-card-header  style="color:white; font-size: 5vh;">
-  			{{item.time}}
-        <ion-toggle light checked={{item.checked}} style="float: right;" (click)="check({sendItem: item})"></ion-toggle>
-  		</ion-card-header>
-  		<ion-card-content>
-        <div style="float:left;">
-  		    {{item.type}}
-        </div>
-        <div style="float:right;">
-          {{item.days}}
-        </div>
-  		</ion-card-content>
-	</ion-card>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 13vw;">{{item.time}}</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">{{item.days}}</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">Dismiss Method</button>
+  <ion-row>
+      <ion-col width-90></ion-col>
+  </ion-row>
+  <button clear light block style="font-size: 6vw;">Snooze</button>
   <ion-row>
       <ion-col width-90></ion-col>
   </ion-row>
   <ion-row>
     <ion-col width-33></ion-col>
     <ion-col width-33>
-      <button clear block style="font-size: 8vw;" (click)="newAlarm()">
-        <ion-icon name="add"></ion-icon>
+      <button clear light block style="font-size: 8vw;" (click)="newAlarm()">
+        <ion-icon name="trash"></ion-icon>
        </button>
     </ion-col>
     <ion-col width-33></ion-col>

@@ -9,18 +9,22 @@
   </div>
 </ion-navbar>
 
-<ion-content class="page1" id="gradient" onLoad="GetClock(); setInterval(GetClock,1000);">
+<ion-content class="page1" id="gradient" onload="GetClock(); setInterval(GetClock,1000);">
+
   <div id="clock"></div>
   <div id="noon_or_midnight"></div>
   <div id="date"></div>
+
   <div id="morning_alarm_time"> 8:00 AM </div>
   <button clear id="morning_alarm_icon" (click)="goToAlarmPage()">
-      <img src="sun.png">
+    <ion-icon name="sunny" style="font-size:450%;"></ion-icon>
   </button>
   <div id="morning_alarm_label"> Morning Alarm </div>
-  <div id="night_alarm_time"> 4:15</div>
+
+  <div id="night_alarm_time"></div>
   <button clear  id="night_alarm_icon" (click)="goToBedTimePage()">
-    <img src="moon.png">
+    <ion-icon name="moon" style="font-size:450%;"></ion-icon>
   </button>
   <div id="night_alarm_label"> Time Until Bed </div>
+
 </ion-content>

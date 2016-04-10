@@ -8741,36 +8741,38 @@ body {
 .page1 #morning_alarm_time {
   position: absolute;
   left: 18vw;
-  top: 70vw;
+  top: 68vw;
   font-size: 5vw;
   color: white; }
 
 .page1 #morning_alarm_icon {
   position: absolute;
-  left: 16vw;
-  top: 77vw;
-  height: 12vh;
+  left: 13vw;
+  top: 72vw;
+  height: 15vh;
+  width: 15vh;
   color: white; }
 
 .page1 #morning_alarm_label {
   position: absolute;
-  left: 9vw;
+  left: 14vw;
   top: 100vw;
   font-size: 4vw;
   color: white; }
 
 .page1 #night_alarm_time {
   position: absolute;
-  left: 66vw;
-  top: 70vw;
+  left: 67vw;
+  top: 68vw;
   font-size: 5vw;
   color: white; }
 
 .page1 #night_alarm_icon {
   position: absolute;
-  left: 65vw;
-  top: 77vw;
-  height: 12vh;
+  left: 58vw;
+  top: 72vw;
+  height: 15vh;
+  width: 15vh;
   color: white; }
 
 .page1 #night_alarm_label {
@@ -8876,7 +8878,7 @@ body {
     width: 100%;
     height: 0;
     padding-bottom: 100%;
-    background: purple;
+    background: #ce93d8;
     border-radius: 50%; }
   .page3 .circle-text div {
     float: left;
@@ -8903,6 +8905,12 @@ body {
   color: white;
   background: transparent; }
 
+.page4 #amount {
+  position: absolute;
+  top: 9vh;
+  left: 44.5vw;
+  font-size: 6vh; }
+
 .page5 #gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32f2c5+9,b4e391+100 */
   background: #32f2c5;
@@ -8917,3 +8925,124 @@ body {
 
 .page5 * {
   color: white; }
+
+.date_modal #head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 7vw;
+  color: white; }
+
+.date_modal ion-list, .date_modal ion-item {
+  background: transparent;
+  color: white; }
+
+.login #first {
+  float: left;
+  font-size: 25vw; }
+
+.login #second {
+  float: right;
+  font-size: 25vw; }
+
+.login #login {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 7vw;
+  color: white;
+  text-align: center;
+  box-shadow: none; }
+
+.login #facebook {
+  float: left;
+  font-size: 15vw;
+  color: white; }
+
+.login #twitter {
+  float: right;
+  font-size: 15vw;
+  color: white; }
+
+.login ion-card-header {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 10vw;
+  color: white;
+  text-align: center; }
+
+.login ion-item, .login ion-label, .login ion-input {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 5vw;
+  color: white; }
+
+.active-alarm #alarm_clock {
+  font-size: 70vw;
+  color: white;
+  text-align: center; }
+
+.survey h2, .survey h3 {
+  color: white; }
+
+.survey #head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 7vw;
+  color: white; }
+
+.survey ion-list, .survey ion-item {
+  background: transparent;
+  color: white; }
+
+.survey input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  height: 8px;
+  vertical-align: middle;
+  width: 200px; }
+
+.survey input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  height: 10px;
+  vertical-align: middle;
+  border: solid 1px rgba(0, 0, 0, 0.25); }
+
+.survey input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid #999;
+  height: 20px;
+  width: 7px;
+  vertical-align: middle;
+  margin-top: -6px; }
+
+.survey input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  height: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  margin: 0;
+  padding: 0; }
+
+.survey input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid #999;
+  height: 20px;
+  width: 5px; }
+
+.active-alarm #alarm_clock {
+  font-size: 70vw;
+  color: white;
+  text-align: center; }

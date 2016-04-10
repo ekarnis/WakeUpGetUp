@@ -10,8 +10,8 @@
   </div>
 </ion-navbar>
 
-<ion-toolbar [attr.primary]="isAndroid ? '' : null">
-  <ion-segment [(ngModel)]="group" [attr.light]="isAndroid ? '' : null">
+<ion-toolbar>
+  <ion-segment [(ngModel)]="group">
     <ion-segment-button value="Friends">
       Friends
     </ion-segment-button>
@@ -25,13 +25,21 @@
 </ion-toolbar>
 
 
-<ion-content class="page4" id="gradient">
+<ion-content class="page4" id="gradient" padding>
 
 <!--   <div padding>
   </div>  -->
 
   <div [ngSwitch]="group">
-    <ion-list *ngSwitchWhen="'Friends'" no-lines>
+    <ion-list *ngSwitchDefault no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$20</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
           <img src="Yona.jpg">
@@ -70,6 +78,14 @@
     </ion-list>
 
     <ion-list *ngSwitchWhen="'Family'" no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$30</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
           <img src="Dana.jpg">
@@ -108,33 +124,41 @@
     </ion-list>
 
     <ion-list *ngSwitchWhen="'Work Friends'" no-lines>
+      <ion-row>
+        <ion-col width-33></ion-col>
+        <ion-col width-33>
+            <ion-icon name="trophy" style="font-size: 40vw;"></ion-icon>
+            <div id="amount" style="color: #ce93d8">$10</div>
+        </ion-col>
+        <ion-col width-33></ion-col>
+      </ion-row>
       <ion-item>
         <ion-thumbnail item-left>
-          <img src="Yona.jpg">
+          <img src="Thales.jpg">
         </ion-thumbnail>
-        <h2>Yona</h2>
-        <ion-badge item-right>560xp</ion-badge>
+        <h2>Thales</h2>
+        <ion-badge item-right>750xp</ion-badge>
       </ion-item>
       <ion-item>
         <ion-thumbnail item-left>
-          <img src="Amanda.jpg">
+          <img src="Ace.jpg">
         </ion-thumbnail>
-        <h2>Amanda</h2>
-        <ion-badge item-right>480xp</ion-badge>
+        <h2>Ace</h2>
+        <ion-badge item-right>680xp</ion-badge>
       </ion-item>
       <ion-item>
         <ion-thumbnail item-left>
-          <img src="Danielle.jpg">
+          <img src="Bryan.jpg">
         </ion-thumbnail>
-        <h2>Danielle</h2>
-        <ion-badge item-right>320xp</ion-badge>
+        <h2>Bryan</h2>
+        <ion-badge item-right>370xp</ion-badge>
       </ion-item>
       <ion-item>
         <ion-thumbnail item-left>
-          <img src="Colleen.jpg">
+          <img src="Luke.jpg">
         </ion-thumbnail>
-        <h2>Colleen</h2>
-        <ion-badge item-right>260xp</ion-badge>
+        <h2>Luke</h2>
+        <ion-badge item-right>360xp</ion-badge>
       </ion-item>
       <ion-item>
         <ion-thumbnail item-left>

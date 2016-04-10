@@ -1,5 +1,6 @@
 import {Page, NavController} from 'ionic-angular';
 import {TabsPage} from '../tabs/tabs';
+import {Survey} from '../survey/survey';
 
 @Page({
   templateUrl: 'build/pages/login/login.html',
@@ -13,8 +14,11 @@ export class Login {
     this.nav = nav;
   }
   openApp(){
-    //this.rootPage = TabsPage;
     this.nav.setRoot(TabsPage);
     this.nav.push(TabsPage)
+  }
+    openSurvey(){
+    this.nav.setRoot(Survey);
+    this.nav.push(Survey)
   }
 }

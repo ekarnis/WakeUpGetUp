@@ -1,4 +1,5 @@
 import {Page, NavController} from 'ionic-angular';
+import {TabsPage} from '../tabs/tabs';
 
 /*
   Generated class for the SurveyPage page.
@@ -20,4 +21,8 @@ export class Survey {
   onDrag($event) {
         $event.stopPropagation();
     }
+    openApp(){
+    this.nav.setRoot(TabsPage);
+    this.nav.push(TabsPage)
+  }
 }
