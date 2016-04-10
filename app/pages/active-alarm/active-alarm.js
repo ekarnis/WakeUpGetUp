@@ -1,20 +1,19 @@
 import {Page, NavController} from 'ionic-angular';
 
-/*
-  Generated class for the ActiveAlarmPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Page({
   templateUrl: 'build/pages/active-alarm/active-alarm.html',
 })
-export class ActiveAlarmPage {
+export class ActiveAlarm {
   static get parameters() {
     return [[NavController]];
   }
 
   constructor(nav) {
     this.nav = nav;
+  }
+  openApp(){
+    //this.rootPage = TabsPage;
+    this.nav.setRoot(TabsPage);
+    this.nav.push(TabsPage)
   }
 }

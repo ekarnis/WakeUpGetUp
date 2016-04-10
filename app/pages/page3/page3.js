@@ -14,20 +14,14 @@ export class Page3 {
   		this.nav = nav;
  	}
   	activate(id) {
-  		document.getElementById(id).className = "circle-text";
-  		this.items.push({
-  			day: id,
-  			make_bed: 'true',
-  			brush_teeth: 'true',
-  			eat_breakfast: 'true',
-  			brush_teeth_night: 'true',
-  			floss: 'true',
-  			read: 'true',
-      	});
-      	var sendItem = this.items.pop;
-      	this.items.push(sendItem);
-      	//var sendItems = this.items;
-  		let modal = Modal.create(Date_Modal, sendItem, id);
+      var temp;
+      if(document.getElementById(id).className != "circle-text") {temp = 0;}
+      if(document.getElementById(id).className == "circle-text") {temp = 1;}
+      //var sendItem = this.items.pop;
+      //this.items.push(sendItem);
+      //var sendItems = this.items;
+  		let modal = Modal.create(Date_Modal, temp, id);
     	this.nav.present(modal);
+      document.getElementById(id).className = "circle-text";
  	}
 }

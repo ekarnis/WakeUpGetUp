@@ -14,10 +14,51 @@ export class Date_Modal {
     this.nav = nav;
     this.viewController = viewCtrl;
 
-    var item = navParams.get('sendItem');
-    var id = navParams.get('id');
+    //var item = navParams.get('sendItem');
+    //this.item = item;
 
-    this.item = item;
+    var id = navParams.get('id');
+    var temp = navParams.get('temp');
+
+    if(temp == 0){
+
+    }
+
+    this.morning_items = [];
+    this.night_items = [];
+
+    this.morning_items.push({
+        type: 'Make Bed',
+        checked: 'true'
+        });
+
+    this.morning_items.push({
+        type: 'Brush Teeth',
+        checked: 'true'
+
+      });
+    this.morning_items.push({
+        type: 'Eat Breakfast',
+        checked: 'true'
+
+      });
+
+    this.night_items.push({
+        type: 'Brush Teeth',
+        checked: 'true'
+        });
+
+    this.night_items.push({
+        type: 'Floss',
+        checked: 'true'
+
+      });
+    this.night_items.push({
+        type: 'Read',
+        checked: 'true'
+
+      });
+
 
   }
 
