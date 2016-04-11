@@ -1,4 +1,5 @@
 import {Page, NavController} from 'ionic-angular';
+import {Puzzle} from '../puzzle/puzzle';
 
 @Page({
   templateUrl: 'build/pages/active-alarm/active-alarm.html',
@@ -11,9 +12,12 @@ export class ActiveAlarm {
   constructor(nav) {
     this.nav = nav;
   }
-  openApp(){
-    //this.rootPage = TabsPage;
-    this.nav.setRoot(TabsPage);
-    this.nav.push(TabsPage)
+  stop_alarm(){
+    this.nav.setRoot(Puzzle);
+    this.nav.push(Puzzle);
+  }
+  //todo
+  snooze(){
+
   }
 }

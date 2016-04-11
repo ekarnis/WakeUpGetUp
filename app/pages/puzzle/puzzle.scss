@@ -1,0 +1,26 @@
+.puzzle {
+
+	h1{
+		padding: 2vh;   
+	    text-align: center;
+	    font-size:10vw;
+	    height:10vh;
+	    color:white;
+	    }
+
+	#time{
+		font-size:15vw;
+	  	color: white;
+
+	}
+
+	 #finished{
+		position:absolute;
+		font-size:10vw;
+	  	color: white;
+	  	text-transform: none;
+		left: 17vw;
+	  	top: 120vw;
+	}
+
+}

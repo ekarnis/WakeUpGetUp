@@ -9,10 +9,19 @@ WakeUp GetUp!
 
 <ion-content padding class="active-alarm" id="gradient" scroll="false">
 	<ion-row>
-		<ion-col width-20></ion-col>
+		<ion-col width-23></ion-col>
 		<ion-col>
 			<ion-icon id="alarm_clock" name="ios-alarm"></ion-icon>
 		</ion-col>
 		<ion-col width-20></ion-col>
 	</ion-row>
+
+	<button id="stop_alarm" (click)="stop_alarm()">
+    	Stop Alarm
+ 	</button>
+
+	<button id="snooze_alarm" (click)="snooze()">
+    	Snooze
+ 	</button>
+
 </ion-content>

@@ -15,10 +15,10 @@ export class Login {
   }
   openApp(){
     this.nav.setRoot(TabsPage);
-    this.nav.push(TabsPage)
+    this.nav.push(TabsPage);
   }
     openSurvey(){
     this.nav.setRoot(Survey);
-    this.nav.push(Survey)
+    this.nav.push(Survey);
   }
 }

@@ -29,3 +29,59 @@
 // App iOS Only Sass
 // --------------------------------------------------
 // CSS that should only apply to the iOS app
+*{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.tab-button-text,
+.tab-button-icon {
+	color: white; 
+}
+.toolbar show-navbar, .toolbar-background{
+	background: #32f2c5;
+
+}
+ion-tabs[secondary] tabbar {
+  background-color: #32f2c5; }
+  ion-tabs[secondary] tabbar .tab-button {
+    color: white; }
+  ion-tabs[secondary] tabbar .tab-button:hover:not(.disable-hover),
+  ion-tabs[secondary] tabbar .tab-button[aria-selected=true] {
+    color: white; }
+  ion-tabs[secondary] tabbar tab-highlight {
+    background: white; }
+/*
+ion-tabs[primary] tabbar {
+  background-color: #32f2c5; }
+  ion-tabs[primary] tabbar .tab-button {
+    color: black; }
+  ion-tabs[primary] tabbar .tab-button:hover:not(.disable-hover),
+  ion-tabs[primary] tabbar .tab-button[aria-selected=true] {
+    color: black; }
+  ion-tabs[primary] tabbar tab-highlight {
+    background: black; }
+*/
+#head{
+		text-align: center;
+		font-weight: bold;
+		font-size: 7vw;
+		color: white;
+	}
+	ion-list,ion-item{
+		background: transparent;
+		color: white;
+	}
+  #gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32f2c5+9,b4e391+100 */
+    background: #32f2c5; /* Old browsers */
+    background: -moz-linear-gradient(top, #32f2c5 9%, #b4e391 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #32f2c5 9%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #32f2c5 9%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32f2c5', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+  }
+  .page_title{
+      color: white;
+      //background: #32f2c5;
+      font-family: 'River-Drive';
+      font-size: 13vw;
+  }

@@ -5,4 +5,21 @@
 		text-align: center;
 	}
 
+	#stop_alarm,#snooze_alarm{
+		position:absolute;
+		font-size:10vw;
+	  	color: white;
+	  	text-transform: none;
+	}
+
+	#stop_alarm{
+		left: 12vw;
+	  	top: 70vh;
+	}
+
+	#snooze_alarm{
+		left: 20vw;
+	  	top: 55vh;
+	}
+
 }

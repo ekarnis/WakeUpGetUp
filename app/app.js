@@ -22,7 +22,47 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      this.registerBackButtonListener();
       StatusBar.styleDefault();
     });
+  }
+  gisterBackButtonListener() {
+    document.addEventListener('backbutton', () => {
+      var nav = this.getNav();
+      if (nav.canGoBack()) {
+        nav.pop();
+      }
+      else {
+        this.confirmExitApp(nav);
+      }
+    });
+  }
+
+
+confirmExitApp(nav) {
+    let confirm = Alert.create({
+      title: 'Confirm Exit',
+      message: 'Really exit app?',
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Exit',
+          handler: () => {
+            navigator.app.exitApp();
+          }
+        }
+      ]
+    });
+    nav.present(confirm);
+  }
+
+
+getNav() {
+    return this.app.getComponent('nav');
   }
 }

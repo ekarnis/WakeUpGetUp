@@ -1,4 +1,4 @@
-.page2 {
+.morninggoals {
 
 	#head{
 		text-align: center;
@@ -9,6 +9,14 @@
 	ion-list,ion-item{
 		background: transparent;
 		color: white;
+	}
+	#finished{
+		position:absolute;
+		font-size:10vw;
+	  	color: white;
+	  	text-transform: none;
+		left: 17vw;
+	  	top: 85vh;
 	}
 
 }
